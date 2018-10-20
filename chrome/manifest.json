@@ -1,0 +1,19 @@
+{
+ "manifest_version": 2,
+ 
+  "name": "Google Search Navigator",
+  "version": "0.1.0",
+  "description": "A simple extension which adds keyboard shortcuts to Google Search.",
+  "content_scripts": [{
+    "matches": [
+      "https://www.google.bg/*"
+    ],
+    "js": ["background.js"]}
+  ],
+  "icons": { 
+	  "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "120": "icon120.png" 
+  }
+}

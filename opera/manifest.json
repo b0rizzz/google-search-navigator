@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Google Search Navigator",
+	"description": "A simple extension which adds keyboard shortcuts to Google Search.",
+	"version": "1.0",
+	"developer": {
+	    "name": "Borislav Madzharov"
+    },
+    "icons": {
+	    "16": "icon16.png",
+	    "32": "icon32.png",
+	    "48": "icon48.png",
+	    "120": "icon120.png"
+    },
+	"content_scripts": [
+		{
+			"matches": ["https://www.google.com/*"],
+			"js": ["background.js"]
+		}
+	],
+	"minimum_opera_version": "32",
+	"permissions": [
+	    "tabs", 
+	    "https://www.google.com/*"
+	]
+}
