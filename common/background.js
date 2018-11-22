@@ -17,7 +17,7 @@ if(elements.length > 0) {
   };
   handleKeyDown(count);
   window.addEventListener("keydown", function(event) {	  
-    if( document.getElementById('lst-ib') !== document.activeElement ) {  
+    if( document.getElementById('tsf').q !== document.activeElement ) {  
       if(event.keyCode === 40 && count < elements.length-1) {
         event.preventDefault();
         count++
@@ -27,7 +27,7 @@ if(elements.length > 0) {
         count--
         handleKeyDown(count);
       } else if(event.keyCode === 27) {
-        document.getElementById('lst-ib').focus();
+        document.getElementById('tsf').q.focus();
       }
     }
   }, true);
