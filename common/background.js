@@ -13,6 +13,11 @@ if(elements.length > 0) {
     let a = h3.parentNode;
     h3.style.border = "1px solid blue";
     a.focus();
+		h3.scrollIntoView({
+        behavior: 'auto',
+        block: 'center',
+        inline: 'center'
+    });
   };
   handleKeyDown(count);
   window.addEventListener("keydown", function(event) {	  
